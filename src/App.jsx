@@ -55,8 +55,24 @@ export default function App() {
         <GitHubSection />
         <DashboardSection todos={todos} setTodos={setTodos} />
         <footer className="footer">
-          Built with React 18, Vite, Framer Motion &amp; Recharts — deployed on GitHub Pages.
-          View source on <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>.
+          <div className="author">
+            <img
+              className="author-avatar"
+              src={import.meta.env.BASE_URL + 'avatar.jpg'}
+              alt="最高FŌTNAITO"
+              onError={(e) => { e.currentTarget.style.display = 'none' }}
+            />
+            <div className="author-text">
+              <strong>Made by 最高FŌTNAITO</strong>
+              <span>Toxic Ani-gamer. 🤓</span>
+              <small>| 𝙵𝚘𝚛𝚝𝚗𝚒𝚝𝚎 ✧.* Project</small>
+            </div>
+          </div>
+          <p className="footer-built">
+            Built with React 18, Vite, Framer Motion &amp; Recharts — deployed on GitHub Pages.
+            View source on <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>.
+          </p>
+          <p className="copyright">© 2026</p>
         </footer>
       </main>
 
