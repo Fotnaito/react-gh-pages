@@ -1,0 +1,7 @@
+cd react-gh-pages
+git init
+git add -A
+git commit -m "init: devdash"
+git branch -M main
+git remote add origin https://github.com/Fotnaito/react-gh-pages.git
+git push -u origin main
